@@ -1,0 +1,27 @@
+<% include header.html %>
+<div class="p">
+    <form method="POST">
+        <input placholder="Description" name="title" type="text"/>
+        <select name="type">
+            <option value="none">Income or Expense?</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <input placeholder="Amount" name="amount" type="number"/>
+        <label>Amount</label>
+        <input name="amount" type="number"/>
+        <button>Add</button>
+
+    </form>
+    <ul>
+    <% for(x in data){ %>
+    <% var row = data[x]; %>
+    <li>
+        <% for(i in row){ %>
+        <strong><%= i %></strong> : <%= row[i] %> 
+        <% } %>
+    </li>
+    <% } %>
+    </ul>
+</div>
+<% include footer.html %>
