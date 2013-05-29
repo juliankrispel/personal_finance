@@ -6,7 +6,7 @@ var app = express(),
 
 
 // Connect to the db
-MongoClient.connect("mongodb://juliankrispel@yahoo.de:jkrispel2@linus.mongohq.com:10008/app15978545", function(err, db) {
+MongoClient.connect("mongodb://juliankrispel:jkrispel2@linus.mongohq.com:10008/app15978545", function(err, db) {
     // Return error if we couldn't connect
     if(err) { return console.dir(err); }
 
