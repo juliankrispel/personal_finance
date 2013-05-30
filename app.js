@@ -6,12 +6,12 @@ var app = express(),
 
 
 // Connect to the db
-MongoClient.connect("mongodb://juliankrispel:611d5d9578eab3273dd49ba4c26175bb@linus.mongohq.com:10008/app15978545", function(err, db) {
+MongoClient.connect("mongodb://juliankrispel:jkrispel2@linus.mongohq.com:10008/app15978545", function(err, db) {
     // Return error if we couldn't connect
     if(err) { return console.dir(err); }
 
     // Create a mongo collection
-    collection = db.collection('julians_finance');
+    collection = db.collection('app15978545');
 
     // Tell App to use bodyParser
     app.use(express.bodyParser());
