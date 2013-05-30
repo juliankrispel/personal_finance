@@ -11,7 +11,7 @@ MongoClient.connect("mongodb://juliankrispel:jkrispel2@linus.mongohq.com:10008/a
     if(err) { return console.dir(err); }
 
     // Create a mongo collection
-    collection = db.collection('app15978545');
+    collection = db.collection('finance');
 
     // Tell App to use bodyParser
     app.use(express.bodyParser());
